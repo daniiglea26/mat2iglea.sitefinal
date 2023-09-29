@@ -5,21 +5,87 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Histórias e Estórias</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body>
-        <header class="cabeçalho">
-            <div class="container">
-            <span class="cabeçalho_menu-hamburguer container_imagem"></span>
-            <img src="fotos/Histórias.png" alt="Logo da Livraria" class="container_imagem">
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Literatura brasileira</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Ficção científica</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Inpirados em fatos reais</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fantasia</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">HQs e Mangás</a>
+                </li>
+            </ul>
+            <img src="fotos/Histórias.png" alt="Logo da Livraria" class="container__imagem">
         </div>
         <div class="container">
-            <a href="#"><img src="fotos/Favoritos.svg" alt="Favoritos" class="container_imagem"></a>
-            <a href="#"><img src="fotos/Compras.svg" alt="Sacola" class="container_imagem"></a>
-            <a href="#"><img src="fotos/Usuário.svg" alt="Perfil" class="container_imagem"></a>
+            <a href="#"><img src="fotos/Favoritos.svg" alt="Favoritos" class="container__imagem"></a>
+            <a href="#"><img src="fotos/Compras.svg" alt="Sacola" class="container__imagem"></a>
+            <a href="#"><img src="fotos/Usuário.svg" alt="Perfil" class="container__imagem"></a>
         </div>
         </header>
+        <section class="banner">
+            <h2 class="banner__titulo">Já sabe o que procurar?</h2>
+            <p class="banner__texto">Encontre aqui livros de todos os tipos e para todos os gostos!</p>
+            <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima compra?">
+        </section>
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Em alta</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+    
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="fotos/Mike.jpg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                    <div class="swiper-slide"><img src="fotos/Pantera.jpg" alt="Livro sobre liderança em design da alura books"></div>
+                    <div class="swiper-slide"><img src="fotos/SDA.2.jpg" alt="Livro sobre javascript assertivo da alurabooks"></div>
+                    <div class="swiper-slide"><img src="fotos/Herosinho.jpg" alt="Livro Guia front end"></div>
+                    <div class="swiper-slide"><img src="fotos/Harry.jpg" alt="Livro sobre portugol"></div>
+                    <div class="swiper-slide"><img src="fotos/Baleia.jpg" alt="livro sobre acessibilidade"></div>
+                </div>
+    
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+        </script>
     </body>
 
 </html>
