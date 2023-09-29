@@ -52,7 +52,7 @@
             <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima compra?">
         </section>
         <section class="carrossel">
-            <h2 class="carrossel__titulo">Em alta</h2>
+            <h2 class="carrossel__titulo">Sugestões</h2>
             <!-- Slider main container -->
             <div class="swiper">
                 <!-- Additional required wrapper -->
@@ -61,17 +61,92 @@
     
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide"><img src="fotos/Mike.jpg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
-                    <div class="swiper-slide"><img src="fotos/Pantera.jpg" alt="Livro sobre liderança em design da alura books"></div>
-                    <div class="swiper-slide"><img src="fotos/SDA.2.jpg" alt="Livro sobre javascript assertivo da alurabooks"></div>
-                    <div class="swiper-slide"><img src="fotos/Herosinho.jpg" alt="Livro Guia front end"></div>
-                    <div class="swiper-slide"><img src="fotos/Harry.jpg" alt="Livro sobre portugol"></div>
-                    <div class="swiper-slide"><img src="fotos/Baleia.jpg" alt="livro sobre acessibilidade"></div>
+                    <div class="swiper-slide"><img src="fotos/Mike.jpg" alt="As aventuras de Mike"></div>
+                    <div class="swiper-slide"><img src="fotos/Pantera.jpg" alt="Pantera Negra: Vingadores do novo mundo livro um"></div>
+                    <div class="swiper-slide"><img src="fotos/SDA.2.jpg" alt="As duas torres: O senhor dos anéis parte II"></div>
+                    <div class="swiper-slide"><img src="fotos/Herosinho.jpg" alt="Herobrine: A lenda"></div>
+                    <div class="swiper-slide"><img src="fotos/Harry.jpg" alt="Harry Potter e a pedra filosofal"></div>
+                    <div class="swiper-slide"><img src="fotos/Baleia.jpg" alt="Moby Dick"></div>
                 </div>
     
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1° linha -->
+                <div class="card__descrição">
+                    <!-- 1° coluna -->
+                    <div class="descrição">
+                        <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descrição__titulo-livro">O Poder da Ação</h2>
+                        <p class="descrição__texto">Paulo Vieira lhe convida a quebrar o ciclo vicioso e iniciar um caminho de realização. Para isso, ele apresenta o método, que pode ser a chave para o que você tanto procura.
+                        </p>
+                    </div>
+                    <!-- 2° coluna -->
+                    <img src="fotos/Ação.jpg" class="descrição__imagem">
+                </div>
+
+                <!-- 2° linha -->
+                <div class="card__botões">
+                    <!-- 1° coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="fotos/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="fotos/Compras.svg" alt="Adicionar na sacola"></li>
+                    </ul>
+                    <!-- 2° coluna -->
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+        <section class=”carrossel”>
+            <h2 class="carrossel__titulo">Em alta</h2>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+    
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="fotos/Nárnia.jpg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                    <div class="swiper-slide"><img src="fotos/Star Wars.jpg" alt="As crônicas de Nárnia: O leão, a feiticeira e o guarda-roupa"></div>
+                    <div class="swiper-slide"><img src="fotos/Lewis.religião.webp" alt="Livro sobre javascript assertivo da alurabooks"></div>
+                    <div class="swiper-slide"><img src="fotos/Front.jpg" alt="Livro Guia front end"></div>
+                    <div class="swiper-slide"><img src="fotos/GG.jpg" alt="Pai rico, Pai pobre"></div>
+                    <div class="swiper-slide"><img src="fotos/Rico.Pobre.jpg" alt="livro sobre acessibilidade"></div>
+                </div>
+    
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descrição">
+                    <!-- 1º coluna -->
+                    <div class="descrição">
+                        <img src="fotos/Estrelinhas.png" alt="Avaliação 5 estrelas">
+                        <h3 class="descrição__titulo">Autores do Mês</h3>
+                        <h2 class="descrição__titulo-livro">Gabriel Dearo e Manu Digílio</h2>
+                        <p class="descrição__texto">Formados em Publicidade e Propaganda, o casal de Youtubers, agora são autores Best-sellers.
+                        </p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="fotos/Manu e Dearo.jpg" class="descrição__imagem">
+                </div>
+    
+                <!-- 2º linha -->
+                <div class="card__botões">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="fotos/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="fotos/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
             </div>
         </section>
 
